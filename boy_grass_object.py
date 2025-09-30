@@ -1,7 +1,7 @@
 from pico2d import *
 import random
 
-
+class Ball:
 
 class Grass:
     def __init__(self):
