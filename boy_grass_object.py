@@ -18,6 +18,9 @@ class Ball:
         elif self.info == 2 and self.y < 70:
             self.y = 70
 
+    def draw(self):
+        self.image.draw(self.x, self.y)
+
 class Grass:
     def __init__(self):
         self.image = load_image('grass.png')
