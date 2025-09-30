@@ -2,6 +2,14 @@ from pico2d import *
 import random
 
 class Ball:
+    def __init__(self):
+        self.x, self.y = random.randint(50, 750), 599
+        self.info = random.randint(1,2)
+        self.speed = random.randint(5, 20)
+        if self.info == 1:
+            self.image = load_image('ball21x21.png')
+        elif self.info == 2:
+            self.image = load_image('ball41x41.png')
 
 class Grass:
     def __init__(self):
