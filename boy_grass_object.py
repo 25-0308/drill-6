@@ -11,6 +11,13 @@ class Ball:
         elif self.info == 2:
             self.image = load_image('ball41x41.png')
 
+    def update(self):
+        self.y -= self.speed
+        if self.info == 1 and self.y < 60:
+            self.y = 60
+        elif self.info == 2 and self.y < 70:
+            self.y = 70
+
 class Grass:
     def __init__(self):
         self.image = load_image('grass.png')
