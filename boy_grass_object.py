@@ -28,6 +28,7 @@ class Grass:
         self.image.draw(400, 30)
     def update(self): pass
 
+
 class Boy:
     def __init__(self):
         self.x, self.y = random.randint(100, 700), 90
